@@ -20,11 +20,3 @@ artifacts:
     name: solvespace-cli.exe
   - path: build\bin\%BUILD_TYPE%\solvespace.pdb
     name: solvespace.pdb
-deploy:
-  - provider: GitHub
-    auth_token:
-      secure: P9/pf2nM+jlWKe7pCjMp41HycBNP/+5AsmE/TETrDUoBOa/9WFHelqdVFrbRn9IC
-    description: ""
-    artifact: solvespace.exe,solvespace-cli.exe,solvespace.pdb
-    on:
-      appveyor_repo_tag: true
